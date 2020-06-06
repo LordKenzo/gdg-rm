@@ -1,0 +1,48 @@
+.banner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+    @include md {
+        flex-direction: row;
+        justify-content: center;
+        margin: 6rem;
+    }
+
+    .image {
+        width: 300px;
+        @include md {
+            width: 200px;
+        }
+    }
+
+    .text {
+        
+        font-weight: bold;
+
+        @include md {
+            width: 70%;
+        }
+
+        h3 {
+            font-size: 2.6rem;
+        }
+
+        .description {
+            font-weight: lighter;
+        }
+
+        button {
+            width: 90%;
+            margin: 10px;
+
+            @include md {
+                width: 30%;
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,46 @@
+.mobile-menu {
+    width: 2.2rem;
+    cursor: pointer;
+    margin: 0 5px 10px 5px;
+    padding: 10px;
+    z-index: 9999;
+
+    &:after,
+    &:before,
+    div{
+        content: '';
+        display: block;
+        height: 4px;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: all 0.2s ease-in-out;
+       
+    }
+
+    &:before {
+        margin: 0 0 5px;
+    }
+    &.is-open {
+        position: fixed;
+    }
+    &.is-open,
+    &:hover{
+
+        &:before {
+            transform: translateY(9px) rotate(45deg);
+          }
+
+        &:after {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    
+        div{
+            transform: scale(0);
+        }
+    }
+
+
+    @include md {
+        display: none;
+    }
+}

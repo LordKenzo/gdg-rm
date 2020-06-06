@@ -1,0 +1,98 @@
+@mixin theme-modifiers($themes: $themes, $prefix: '-', $separator: '-') {
+    @each $theme, $prop in $themes {
+      &#{$prefix}#{$theme} {
+        @each $attribute, $value in $prop {
+            #{$attribute}: $value;
+        }
+      }
+    }
+  }
+
+@mixin themable($theme-name, $theme-map) {
+    .#{$theme-name} {
+    // Loop through each of the keys (sections)
+        
+        @each $section, $map in $theme-map {
+            #{$section} {
+                $keys: map-keys($map);
+                @each $k, $v in $keys {
+                    #{$k}:map-get($map, $k);
+                }
+                // background-color: map-get($map, bg);
+                // color: map-get($map, color);
+                // border: map-get($map, border) solid map-get($map, border-color);
+            }
+        }
+    }
+}
+
+
+
+@mixin themableTwo($theme-name, $theme-map) {
+    .#{$theme-name} {
+    // Loop through each of the keys (sections)
+        @each $section, $map in $theme-map {
+            @if ($section == header) {
+                header {
+                    background-color: map-get($map, bg);
+                    color: map-get($map, color);
+                    border: map-get($map, border) solid map-get($map, border-color);
+                }
+            } 
+            @else if ($section == nav) {
+                nav {
+                    color: map-get($map, color);
+                    background-color: map-get($map, bg);
+                    border: map-get($map, border) solid map-get($map, border-color);
+                }
+                .mobile-menu div,
+                .mobile-menu:after,
+                .mobile-menu:before {
+                    background-color: map-get($map, mobile);
+                }
+                ul.is-open {
+                    color: map-get(map-get($map, ul), color);
+                    background-color: map-get(map-get($map, ul), bg);
+                }
+            } @else {
+                .#{$section} {
+                    background-color: map-get($map, bg);
+                    color: map-get($map, color);
+
+                    @if ($section != button) {
+                        height: map-get($map, height);
+                        width: map-get($map, width);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }

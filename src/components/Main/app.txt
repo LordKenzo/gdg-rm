@@ -1,0 +1,10 @@
+<div className="event">
+      <Link to={`/${event.slug}`}>
+        <div>
+          <span>{event.date}</span>
+          <h3>{event.title}</h3>
+          <p>{event.excerpt}</p>
+        </div>
+        <img src={event.featureImage.childImageSharp.fixed.src} alt="event" />
+      </Link>
+    </div>

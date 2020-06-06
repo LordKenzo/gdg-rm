@@ -1,0 +1,22 @@
+{
+    "menu": [{
+        "id": 0,
+        "name": "Home",
+        "link": "/"
+    },
+    {
+        "id": 1,
+        "name": "Events",
+        "link": "/events"
+    },
+    {
+        "id": 2,
+        "name": "Blog",
+        "link": "/blog"
+    },
+    {
+        "id": 3,
+        "name": "About",
+        "link": "/about"
+    }]
+}

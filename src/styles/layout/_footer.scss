@@ -1,0 +1,27 @@
+footer {
+    color: $primary;
+    background-color: $secondary-bg;
+    
+    .contacts {
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        justify-content: space-evenly;
+        div {
+            width: 100%;
+            @media screen and (min-width: 700px) {
+                width: 30%;
+            }
+        }
+        
+        
+    }
+
+    .credits {
+        text-align: center;
+        border-top: 2px solid #ccc;
+        padding: 2.8rem 0;
+        font-size: 1rem;
+    }
+}

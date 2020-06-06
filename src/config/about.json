@@ -1,0 +1,14 @@
+{
+    "about": {
+        "title": "About GDG Roma",
+        "description": "Google Developers Group (GDG) Roma is a group of people who are interested in Google technology mainly and share information. We have study sessions in Roma on weekdays and weekends. Please feel free to join us if you are interested.",
+        "button1": {
+            "text":"Seguici su Facebook",
+            "link":""
+        },
+        "button2": {
+            "text": "Per saperne di più",
+            "link": ""
+        }
+    }
+}

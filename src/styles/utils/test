@@ -1,0 +1,43 @@
+
+@mixin themable($theme-name, $theme-map) {
+    .#{$theme-name} {
+        @each $section, $map in $theme-map {
+            #{$section} {
+                background-color: map-get($map, bg);
+                color: map-get($map, color);
+                border: map-get($map, border) solid map-get($map, border-color);
+                @if (type-of($map) == 'map') {
+                    @each $k, $v in $map {
+                        ul {
+                            color: #{$k};
+                            background-color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+$theme-2: (
+   header: (
+       bg: #ffffff,
+       color: rgb(15, 15, 15),
+       border-color: rgb(180, 120, 120),
+       border: 0px,
+   ),
+   nav: (
+       bg: transparent,
+       color: #fff,
+       border-color: rgb(180, 120, 120),
+       border: 0px,
+       height: 100%,
+       width: 69%,
+       mobile: #000,
+       ul : (
+        bg: #481b16,
+        color: #333
+       )
+   ),
+);

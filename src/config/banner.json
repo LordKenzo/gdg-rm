@@ -1,0 +1,16 @@
+{
+    "banner": {
+        "title": "Immaginiamo <em>insieme</em> il futuro!",
+        "description": "Google Developers Group (GDG) Roma is a group of people who are interested in Google technology mainly and share information.",
+        "tag": "GDG Roma",
+        "button1": {    
+            "text":"Unisciti a noi",
+            "link":""
+        },
+        "button2": {
+            "text": "Per saperne di più",
+            "link": ""
+        }
+    }
+    
+}

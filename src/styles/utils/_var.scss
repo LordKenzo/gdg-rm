@@ -1,0 +1,35 @@
+$debug: 2px solid red;
+
+$primary: #fff;
+$secondary: #222;
+$primary-alt: rgb(194, 162, 132);
+$secondary-alt: #413535;
+$primary-bg: #ccc;
+$secondary-bg: #4C4A78;
+$footer-bg: #4C4A78;
+
+$btn-primary-fg: #fff;
+$btn-primary-bg: rgb(26, 115, 232);
+$btn-primary-border: #166fd4;
+
+$btn-secondary-fg: #00bcd4;
+$btn-secondary-bg: #fff;
+$btn-secondary-border:#00bcd4;
+
+$google-blue: #5F8ACC;
+$google-red: #DD372A;
+$google-yellow: #F9C828;
+$google-green: #0B9849;
+
+$activities: #222;
+
+// https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+

@@ -1,0 +1,21 @@
+.color-bar {
+    display: flex;
+    padding: 0;
+    li {
+        width:25%;
+        display: block;
+        height: 10px;
+    }
+    li.color-blue {
+        background-color: $google-blue;
+    }
+    li.color-red {
+        background-color: $google-red;
+    }
+    li.color-yellow {
+        background-color: $google-yellow;
+    }
+    li.color-green {
+        background-color: $google-green;
+    }
+}

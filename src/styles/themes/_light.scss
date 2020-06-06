@@ -1,0 +1,44 @@
+$light: (
+     '#___gatsby': (
+          background-color: $primary,
+          color: $secondary,
+     ),
+    header: (
+        background-color: #095268,
+        color: rgb(255, 255, 255),
+        border-color: rgb(180, 120, 120),
+        border-width: 1px,
+    ),
+   nav: (
+        background-color: transparent,
+        color: #fff,
+        border-color: rgb(180, 120, 120),
+        border-width: 1px,
+   ),
+   nav 'ul.is-open' : (
+        background-color: #095268,
+        color: rgb(252, 252, 252),
+   ),
+   '.mobile-menu div': (
+        background-color: rgb(250, 227, 152),
+        border: 0px,
+   ),
+   '.mobile-menu:after': (
+        background-color: rgb(185, 96, 13),
+        border: 0px,
+   ),
+   '.mobile-menu:before': (
+        background-color: rgb(185, 96, 13),
+        border: 0px,
+   ),
+   '.theme-switch': (
+        background-image: url('../images/night-mode.svg')
+   ),
+   main : (
+     background-color: $primary,
+   ),
+   '.banner': (
+        color: $secondary,
+       
+   )
+);
